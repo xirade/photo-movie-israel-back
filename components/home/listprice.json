@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_listprice_listprices",
+  "info": {
+    "name": "listprice",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "visible": {
+      "type": "boolean",
+      "default": false
+    },
+    "uid": {
+      "type": "string",
+      "required": false
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "gray",
+        "light",
+        "warning"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "name": "HomePage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titletop": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "metades": {
+      "type": "text"
+    },
+    "homes": {
+      "collection": "home"
+    },
+    "titlemiddle": {
+      "type": "string"
+    },
+    "submiddletitle": {
+      "type": "string"
+    },
+    "metatitle": {
+      "type": "string"
+    }
+  }
+}

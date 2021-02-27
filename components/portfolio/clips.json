@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_portfolio_clips",
+  "info": {
+    "name": "clips",
+    "icon": "video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

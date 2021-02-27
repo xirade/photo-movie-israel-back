@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contact-mes",
+      "handler": "contact-me.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contact-mes/count",
+      "handler": "contact-me.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contact-mes/:id",
+      "handler": "contact-me.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contact-mes",
+      "handler": "contact-me.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contact-mes/:id",
+      "handler": "contact-me.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contact-mes/:id",
+      "handler": "contact-me.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

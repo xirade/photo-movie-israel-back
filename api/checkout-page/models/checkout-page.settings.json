@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "checkout_pages",
+  "info": {
+    "name": "CheckoutPage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "metatitle": {
+      "type": "string"
+    },
+    "metades": {
+      "type": "text"
+    }
+  }
+}

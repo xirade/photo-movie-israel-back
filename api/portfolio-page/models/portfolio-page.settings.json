@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "portfolio_pages",
+  "info": {
+    "name": "portfolioPage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "portfolios": {
+      "collection": "portfolio"
+    },
+    "metatitle": {
+      "type": "string"
+    },
+    "metades": {
+      "type": "text"
+    }
+  }
+}

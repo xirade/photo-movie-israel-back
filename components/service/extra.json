@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_service_extras",
+  "info": {
+    "name": "extra",
+    "icon": "external-link-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "counter": {
+      "type": "integer"
+    }
+  }
+}

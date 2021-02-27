@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_home_extras",
+  "info": {
+    "name": "extra",
+    "icon": "arrows-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "counter": {
+      "type": "integer"
+    }
+  }
+}

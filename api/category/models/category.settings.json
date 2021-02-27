@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Clips": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section"
+    },
+    "Pictures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "service.pictures"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "clips",
+        "families",
+        "brands",
+        "creativity"
+      ]
+    },
+    "portfolio": {
+      "model": "portfolio",
+      "via": "category"
+    },
+    "metades": {
+      "type": "text"
+    }
+  }
+}

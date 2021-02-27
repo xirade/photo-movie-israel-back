@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_portfolio_images",
+  "info": {
+    "name": "images",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "width": {
+      "type": "integer",
+      "min": 2,
+      "max": 4,
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "families"
+      ]
+    }
+  }
+}

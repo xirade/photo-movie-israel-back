@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homes",
+  "info": {
+    "name": "home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "camera",
+        "video",
+        "film",
+        "heart"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "warning",
+        "info",
+        "success",
+        "danger"
+      ]
+    },
+    "listprices": {
+      "collection": "listprice",
+      "via": "home"
+    },
+    "extralist": {
+      "via": "home",
+      "model": "extralist"
+    },
+    "modalimg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

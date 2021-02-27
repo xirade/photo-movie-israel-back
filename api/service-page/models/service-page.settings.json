@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "service_pages",
+  "info": {
+    "name": "ServicePage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "metatitle": {
+      "type": "string"
+    },
+    "metades": {
+      "type": "text"
+    },
+    "orders": {
+      "collection": "order"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "extralists",
+  "info": {
+    "name": "extralist",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "max": {
+      "type": "integer"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "order": {
+      "model": "order",
+      "via": "extralists"
+    },
+    "home": {
+      "model": "home",
+      "via": "extralist"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "family"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "count": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

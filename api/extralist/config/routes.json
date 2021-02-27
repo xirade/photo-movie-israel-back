@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/extralists",
+      "handler": "extralist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/extralists/count",
+      "handler": "extralist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/extralists/:id",
+      "handler": "extralist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/extralists",
+      "handler": "extralist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/extralists/:id",
+      "handler": "extralist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/extralists/:id",
+      "handler": "extralist.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

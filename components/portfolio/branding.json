@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_portfolio_brandings",
+  "info": {
+    "name": "branding",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "width": {
+      "type": "integer",
+      "max": 4,
+      "required": true,
+      "min": 2
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "brand"
+      ]
+    }
+  }
+}

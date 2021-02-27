@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "listprices",
+  "info": {
+    "name": "listprice",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "visible": {
+      "type": "boolean"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "gray",
+        "light",
+        "warning",
+        "secondary",
+        "dark"
+      ]
+    },
+    "order": {
+      "via": "listprices",
+      "model": "order"
+    },
+    "uid": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "default": "null"
+    },
+    "home": {
+      "via": "listprices",
+      "model": "home"
+    }
+  }
+}

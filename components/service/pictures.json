@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_service_pictures",
+  "info": {
+    "name": "Pictures",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "alt": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

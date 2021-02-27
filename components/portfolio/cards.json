@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_portfolio_cards",
+  "info": {
+    "name": "cards",
+    "icon": "atlas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "categories": {
+      "collection": "category"
+    }
+  }
+}
